@@ -9,6 +9,8 @@ export interface Project {
   description: { ru: string; en: string };
   image: string;
   tags: string[];
+  liveUrl: string;
+  githubUrl: string;
 }
 
 export const projects: Project[] = [
@@ -21,6 +23,8 @@ export const projects: Project[] = [
     },
     image: leadPilotDesktop,
     tags: ["React", "TypeScript", "Electron"],
+    liveUrl: "https://dimarger.github.io/leadpilot-desktop/",
+    githubUrl: "https://github.com/dimarger/leadpilot-desktop",
   },
   {
     id: "beautyflow-crm",
@@ -31,6 +35,8 @@ export const projects: Project[] = [
     },
     image: beautyFlowCrm,
     tags: ["Next.js", "NestJS", "TypeScript"],
+    liveUrl: "https://dimarger.github.io/beautyflow-crm/",
+    githubUrl: "https://github.com/dimarger/beautyflow-crm",
   },
   {
     id: "aurelia-dental",
@@ -41,6 +47,8 @@ export const projects: Project[] = [
     },
     image: aureliaDental,
     tags: ["React", "Vite"],
+    liveUrl: "https://dimarger.github.io/aurelia-dental/",
+    githubUrl: "https://github.com/dimarger/aurelia-dental",
   },
   {
     id: "north-house",
@@ -51,5 +59,7 @@ export const projects: Project[] = [
     },
     image: northHouse,
     tags: ["React", "Vite"],
+    liveUrl: "https://dimarger.github.io/north-house/",
+    githubUrl: "https://github.com/dimarger/north-house",
   },
 ];

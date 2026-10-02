@@ -24,6 +24,7 @@ export const translations = {
       title: "Работы",
       subtitle: "Избранные сайты и лендинги",
       visit: "Открыть",
+      openSite: "Открыть сайт",
       comingSoon: "Скоро здесь появятся проекты",
     },
     contact: {
@@ -62,6 +63,7 @@ export const translations = {
       title: "Work",
       subtitle: "Selected websites and landing pages",
       visit: "Visit",
+      openSite: "Open website",
       comingSoon: "Projects are coming soon",
     },
     contact: {

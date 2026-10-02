@@ -33,6 +33,14 @@ export default function Work() {
                       ))}
                     </ul>
                   )}
+                  <div className="work-card__actions">
+                    <a href={project.liveUrl} target="_blank" rel="noreferrer">
+                      {t.work.openSite}
+                    </a>
+                    <a href={project.githubUrl} target="_blank" rel="noreferrer">
+                      GitHub
+                    </a>
+                  </div>
                 </div>
               </div>
             ))}
