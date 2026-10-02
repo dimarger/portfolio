@@ -309,7 +309,7 @@
   padding: 9px 16px;
   border: 1px solid var(--color-border-strong);
   border-radius: 999px;
-  color: var(--color-text-primary);
+  color: var(--color-text);
   font-size: 13px;
   font-weight: 600;
   text-decoration: none;
@@ -318,8 +318,8 @@
 
 .work-card__actions a:first-child,
 .work-card__actions a:hover {
-  background: var(--color-text-primary);
-  border-color: var(--color-text-primary);
+  background: var(--color-text);
+  border-color: var(--color-text);
   color: var(--color-bg);
 }
 
