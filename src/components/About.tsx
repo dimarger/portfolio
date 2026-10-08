@@ -8,6 +8,9 @@ const stack = [
   "CSS",
   "HTML",
   "Node.js",
+  "Next.js",
+  "Supabase",
+  "Cloudflare Workers",
 ];
 
 export default function About() {
@@ -26,6 +29,10 @@ export default function About() {
               <li key={item}>{item}</li>
             ))}
           </ul>
+        </div>
+        <div className="about__stack about__types">
+          <span className="about__stack-label">{t.about.typesLabel}</span>
+          <ul className="about__stack-list">{t.about.types.map(item => <li key={item}>{item}</li>)}</ul>
         </div>
       </div>
     </section>

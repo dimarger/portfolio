@@ -1,6 +1,7 @@
 import { useLanguage } from "../i18n/LanguageContext";
 import { translations } from "../i18n/translations";
 import { projects } from "../data/projects";
+import CallScopeCase from './CallScopeCase';
 
 export default function Work() {
   const { lang } = useLanguage();
@@ -11,6 +12,8 @@ export default function Work() {
       <div className="container">
         <h2 className="section-title">{t.work.title}</h2>
         <p className="work__subtitle">{t.work.subtitle}</p>
+
+        <CallScopeCase />
 
         {projects.length === 0 ? (
           <p className="work__empty">{t.work.comingSoon}</p>
