@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useLanguage } from '../i18n/LanguageContext';
 import { translations } from '../i18n/translations';
 import { callScope } from '../data/callscope';
@@ -10,6 +10,13 @@ export default function CallScopeCase() {
   const [selected, setSelected] = useState(0);
   const [caseOpen, setCaseOpen] = useState(() => window.location.hash === '#callscope-case');
   const screen = callScope.screens[selected];
+  useEffect(() => {
+    // A direct case URL can arrive before the SPA has mounted its anchor.
+    const hash = window.location.hash;
+    if (hash === '#callscope' || hash === '#callscope-case') {
+      document.getElementById(hash.slice(1))?.scrollIntoView({ behavior: 'auto' });
+    }
+  }, []);
 
   return (
     <article id="callscope" className="callscope" aria-labelledby="callscope-title">

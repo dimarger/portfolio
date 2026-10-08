@@ -3,6 +3,7 @@
   --case-tint: #edf5f2;
   min-width: 0;
   margin-bottom: 72px;
+  scroll-margin-top: 88px;
 }
 html[data-theme="dark"] .callscope {
   --case-accent: #8cdbc6;
